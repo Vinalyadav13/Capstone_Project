@@ -1,0 +1,3 @@
+TEST_MONITOR this is a sample log entry
+INFO normal message
+TEST_MONITOR another matching line
