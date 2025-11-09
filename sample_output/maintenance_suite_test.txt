@@ -1,0 +1,181 @@
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 
+1
+Source path to backup: /c/Users/vinal/Desktop/Capstone_Project/test_backup
+Backup root directory: /c/Users/vinal/Desktop/Capstone_Project/backups/test_backup
+Retain days (default 7): 3
+Starting backup of '/c/Users/vinal/Desktop/Capstone_Project/test_backup' -> '/c/Users/vinal/Desktop/Capstone_Project/backups/test_backup/backup_20251109T142319'
+rsync not found — using cp instead.
+Backup completed. Log: /c/Users/vinal/.maintenance/logs/backup_20251109.log
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 2
+Run update_clean.sh now? (y/N): n
+Cancelled.
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 3
+Enter pattern to search (e.g. ERROR|failed): TEST_MONITOR
+Follow? (y/N): n
+Number of lines to scan (default 50): 10
+No log source found. Provide -l /path/to/logfile
+
+vinal@MY-DEVICE MINGW64 ~/Desktop/Capstone_Project
+$ ./log_monitor.sh -p 'TEST_MONITOR' -l ./test_log.txt -n 10
+Searching last 10 lines of ./test_log.txt for pattern: TEST_MONITOR
+TEST_MONITOR this is a sample log entry
+TEST_MONITOR another matching line
+
+vinal@MY-DEVICE MINGW64 ~/Desktop/Capstone_Project
+$ ./maintenance_suite.sh
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 4
+total 4.0K
+-rw-r--r-- 1 vinal 197121 871 Nov  9 14:23 backup_20251109.log
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 5
+# Sample cron entries (add with crontab -e)
+# Daily backup at 02:30 (adjust paths):
+# 30 2 * * * /path/to/maintenance/backup.sh -s /home/user/projects -d /media/backup_drive/projects_backup -r 14 >> /home/user/.maintenance/logs/cron_backup.log 2>&1
+
+# Weekly system update on Sunday at 03:00:
+# 0 3 * * 0 /path/to/maintenance/update_clean.sh -y >> /home/user/.maintenance/logs/cron_update.log 2>&1
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 5
+# Sample cron entries (add with crontab -e)
+# Daily backup at 02:30 (adjust paths):
+# 30 2 * * * /path/to/maintenance/backup.sh -s /home/user/projects -d /media/backup_drive/projects_backup -r 14 >> /home/user/.maintenance/logs/cron_backup.log 2>&1
+
+# Weekly system update on Sunday at 03:00:
+# 0 3 * * 0 /path/to/maintenance/update_clean.sh -y >> /home/user/.maintenance/logs/cron_update.log 2>&1
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 5
+# Sample cron entries (add with crontab -e)
+# Daily backup at 02:30 (adjust paths):
+# 30 2 * * * /path/to/maintenance/backup.sh -s /home/user/projects -d /media/backup_drive/projects_backup -r 14 >> /home/user/.maintenance/logs/cron_backup.log 2>&1
+
+# Weekly system update on Sunday at 03:00:
+# 0 3 * * 0 /path/to/maintenance/update_clean.sh -y >> /home/user/.maintenance/logs/cron_update.log 2>&1
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+# Sample cron entries (add with crontab -e)
+# Daily backup at 02:30 (adjust paths):
+# 30 2 * * * /path/to/maintenance/backup.sh -s /home/user/projects -d /media/backup_drive/projects_backup -r 14 >> /home/user/.maintenance/logs/cron_backup.log 2>&1
+
+# Weekly system update on Sunday at 03:00:
+# 0 3 * * 0 /path/to/maintenance/update_clean.sh -y >> /home/user/.maintenance/logs/cron_update.log 2>&1
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+# 0 3 * * 0 /path/to/maintenance/update_clean.sh -y >> /home/user/.maintenance/logs/cron_update.log 2>&1
+===============================================
+Bash Maintenance Suite
+Location: /c/Users/vinal/Desktop/Capstone_Project
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+Choose an option:
+  1) Run backup.sh
+  2) Run update_clean.sh
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  3) Run log_monitor.sh (interactive)
+  4) Show logs directory
+  5) Install cron job examples (will not enable without user confirmation)
+  5) Install cron job examples (will not enable without user confirmation)
+  6) Exit
+===============================================
+Option> 6
+Goodbye.

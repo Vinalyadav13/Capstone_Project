@@ -1,0 +1,2 @@
+DEBUG: FOLLOW=true, LOGFILE=./test_log_follow.txt, PATTERN=TEST_MONITOR
+Following ./test_log_follow.txt for pattern: TEST_MONITOR
